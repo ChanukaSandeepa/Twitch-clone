@@ -1,0 +1,38 @@
+.channel {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.channel:hover {
+    background-color: #26262C;
+}
+
+.title {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.description {
+    color: lightgray;
+    font-size: 10px;
+}
+
+
+.details {
+    margin: 0;
+}
+
+.live-updates {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.live-updates > i {
+    padding-right: 5px;
+}
