@@ -1,8 +1,30 @@
 .sidebar {
     flex: 1;
+    height: 100%;
 }
 
 .sidebar > p {
     font-weight: 600;
     font-size: 15px;
+}
+
+.serch-container {
+    border-top: 1px solid #363639;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serch-container > input {
+    background-color: #4C4C4F;
+    border: none;
+    width: 90%;
+    height: 60%;
+    outline-width: 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
 }
