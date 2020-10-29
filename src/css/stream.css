@@ -1,0 +1,45 @@
+.stream {
+    display: flex;
+    height: 100%;
+}
+.video-fraction {
+    width: 70%;
+    height: 100%;
+    background-color: lightgreen;
+}
+
+.profile-fraction {
+    width: 30%;
+    padding: 10px;
+    background-color: #18181B;
+}
+
+.pro-details {
+    display: flex;
+
+}
+
+.pro-tags {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.pro-des > span {
+    line-height: 0px;
+    font-size: 12px;
+}
+
+.channel-details {
+    padding: 0 5px;
+}
+
+.channel-details > span {
+    display: block;
+    color: #A970FF;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.channel-details > p{
+    font-size: 13px;
+}

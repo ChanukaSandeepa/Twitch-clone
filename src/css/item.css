@@ -1,0 +1,45 @@
+.item {
+    display: flex;
+    flex: 1;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container {
+    width: 90%;
+    height: 90%;
+}
+
+.video {
+    height: 70%;
+}
+
+.caption {
+    height: 30%;
+    display: flex;
+    padding: 5px;
+
+}
+
+.channel-des {
+    flex: 1;
+    padding: 0px 10px;
+}
+
+.sub-title {
+    color: lightgray;
+    font-size: 10px;
+    display: block;
+}
+
+.channel-title {
+    font-size: small;
+    font-weight: 600;
+}
+
+.caption > .MuiSvgIcon-root:hover {
+    padding: 0px;
+    background-color: #3E3E40;
+    border-radius: 5px;
+}

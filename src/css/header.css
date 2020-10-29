@@ -31,9 +31,10 @@
 .header_right {
     flex : 1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
 }
+
 
 .header_right > h4 {
     padding-left: 20px;
@@ -42,7 +43,13 @@
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+.header_right > h4:hover {
+    background-color: #464649;
+}
+
 
 .header_rightContainer {
     display: flex;
@@ -53,9 +60,8 @@
 }
 
 .header_vertical {
+    border-left: 6px solid green;
     height: 100%;
-    background-color: lightgray;
-    width: 10px;
 }
 
 .header_leftLogo {
@@ -67,10 +73,11 @@
 .dots {
     padding:  8px;
     border-radius: 10px;
+    margin-right: 2px;
 }
 
 .dots:hover {
-    background-color: lightslategrey;
+    background-color: #464649;
 }
 
 .header-center_container {

@@ -28,3 +28,12 @@
     color: white;
     font-weight: 600;
 }
+
+.sidebar-channels {
+    overflow-y: auto;
+}
+
+.sidebar-channels > div > span {
+    font-weight: 600;
+    font-size: 13px;
+}

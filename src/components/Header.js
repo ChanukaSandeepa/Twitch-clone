@@ -24,12 +24,12 @@ export default function Header() {
                 </div>
             </div>
             <div className="header_right">
-                <i className="fas fa-crown"></i>
-                <i className="fas fa-inbox"></i>
-                <i className="fas fa-comment-alt"></i>
-                <i className="fas fa-gem"></i>
+                <i className="fas fa-crown dots"></i>
+                <i className="fas fa-inbox dots"></i>
+                <i className="fas fa-comment-alt dots"></i>
+                <i className="fas fa-gem dots"></i>
                 <h4>Get Bits</h4>
-                <Avatar/>
+                <Avatar style={{margin : '0 10px', width : '35px', height : '35px'}}/>
             </div>
         </div>
     )

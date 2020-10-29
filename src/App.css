@@ -1,4 +1,24 @@
 * {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+*::-webkit-scrollbar-track {
+  background: none;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(153, 153, 156);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar:hover {
+  width: 5px;
+  display: inline;
+}
+
+* {
   color: white;
 }
 
@@ -19,10 +39,9 @@
   background-color: #1F1F23;
 }
 
-.app-chatarea {
-  flex : 0.4;
-}
-
-.app-container {
-  flex : 0.3;
+.app-body {
+  width: 80%;
+  height: 100%;
+  background-color: #0E0E10;
+  overflow-y: auto;
 }

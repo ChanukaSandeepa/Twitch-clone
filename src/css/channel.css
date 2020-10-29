@@ -1,10 +1,11 @@
 .channel {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
+    cursor: pointer;
 }
 
 .channel:hover {
@@ -13,7 +14,7 @@
 
 .title {
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -35,4 +36,9 @@
 
 .live-updates > i {
     padding-right: 5px;
+}
+
+.live-updates > p {
+    font-size: 13px;
+    padding-right: 10px;
 }
