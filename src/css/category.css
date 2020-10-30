@@ -8,6 +8,7 @@
 .category-container {
     width: 90%;
     height: 90%;
+    cursor: pointer;
 }
 
 .image-container {

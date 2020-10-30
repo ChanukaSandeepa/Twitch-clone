@@ -7,11 +7,11 @@ export default function Header() {
         <div className="header">
             <div className="header_left">
                 <img className="header_leftLogo" src="https://pngimg.com/uploads/twitch/twitch_PNG6.png" alt="Twitch logo" />
-                <p>Following</p>
-                <p>Browse</p>
+                <span>Following</span>
+                <span>Browse</span>
                 <div className="header_vertical"></div>
-                <p>E sports</p>
-                <p>Musices</p>
+                <span>Esports</span>
+                <span>Musices</span>
                 
                 <i className="fas fa-ellipsis-h dots"></i>
             </div>

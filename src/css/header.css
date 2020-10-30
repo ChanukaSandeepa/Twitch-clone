@@ -18,6 +18,16 @@
     align-items: center;
 }
 
+.header_left > span {
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header_left > span:hover {
+    color: #A970FF;
+}
+
 .header-center {
     flex : 1;
     display: flex;
@@ -60,8 +70,9 @@
 }
 
 .header_vertical {
-    border-left: 6px solid green;
-    height: 100%;
+    /* display: flex; */
+    border-left: 1px solid lightgray;
+    height: 8vh;
 }
 
 .header_leftLogo {

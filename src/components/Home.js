@@ -1,19 +1,40 @@
+import { IconButton } from '@material-ui/core'
 import { ArrowBackIos, ArrowForwardIos, ChevronLeft, ChevronRight } from '@material-ui/icons'
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/home.css'
 import Category from './Category'
 import Item from './Item'
 import Stream from './Stream'
 
 export default function Home() {
+
+    const streams = [<Stream/>, <Stream/>]
+    const [currentLiveIndex, setCurrentLiveIndex] = useState(0)
+    const [previosLiveIndex, setPrevisouIndex] = useState(undefined)
+    const liveSelectorHandler = (num) => {
+        let index = num + currentLiveIndex;
+        setPrevisouIndex(currentLiveIndex)
+        if(index < 0){
+            setCurrentLiveIndex(streams.length - 1)
+        } else if(index >= streams.length) {
+            setCurrentLiveIndex(0)
+        } else {
+            setCurrentLiveIndex(index)
+        }
+    }
+
     return (
         <div className="home">
             <div className="stream-area">
-                <ChevronLeft className="icon"/>
+                <IconButton onClick={() => liveSelectorHandler(-1)}>
+                    <ChevronLeft className="icon"/>
+                </IconButton>
                 <div className="video-area">
-                    <Stream/>
+                    {streams[currentLiveIndex]}
                 </div>
-                <ChevronRight className="icon"/>
+                <IconButton onClick={() => liveSelectorHandler(1)}>
+                    <ChevronRight className="icon"/>
+                </IconButton>
             </div>
             <p>Most live channels</p>
             <div className="section">
