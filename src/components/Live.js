@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/live.css'
 import ReactPlayer from 'react-player'
 import { Avatar } from '@material-ui/core'
+import { Link } from 'react-router-dom'
 import Tag from './Tag'
 
 export default function Live() {
@@ -16,7 +17,7 @@ export default function Live() {
                         <div className="descrip-container">
                             <Avatar style={{width : '60px', height : '60px'}}/>
                             <div className="descrip">
-                                <h3>Channel Name</h3>
+                                <Link to="profile"><h3>Channel Name</h3></Link>
                                 <span className="sub-title-1">C'est parti pour un Let's Play sur Little Hope ! #ad</span>
                                 <span className="sub-title-2">The Dark Pictures Anthology: Little Hope</span>
                                 <div className="tag-container">

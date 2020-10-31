@@ -24,7 +24,7 @@ export default function ProfileHeader() {
                     <ExpandMore style={{fontSize : '12px'}}/>
                 </div>
                 <IconButton>
-                <MoreVert/>
+                    <MoreVert/>
                 </IconButton>
             </div>
         </div>

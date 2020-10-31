@@ -1,6 +1,7 @@
 import { Avatar, setRef } from '@material-ui/core'
 import React, { useCallback, useEffect, useState } from 'react'
 import { createRef } from 'react'
+import { useHistory, Link } from 'react-router-dom'
 import '../css/channel.css'
 
 export default function Channel() {
@@ -30,8 +31,11 @@ export default function Channel() {
     const defaultCss = { display : 'flex', alignItems : 'center', justifyContent : 'space-around', width : '50%' }
     const collapsedCss = { display : 'flex', alignItems : 'center', justifyContent : 'center', width : '100%' }
 
+
+
     return (
-        <div ref={ref} className="channel">
+        <Link to="/live">
+        <div onClick={() => <Link to="/live"/>} ref={ref} className="channel">
             <div style={!isCollapsed ? defaultCss : collapsedCss}>
                 <Avatar style={{width : '30px', height : '30px'}}/>
                 {!isCollapsed && <div className="details">
@@ -44,5 +48,6 @@ export default function Channel() {
                 <p>200k</p>
             </div>}
         </div>
+        </Link>
     )
 }

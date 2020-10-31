@@ -16,6 +16,7 @@ function App() {
   }
 
   return (
+    <Router>
     <div className="App">
       <Header/>
       <div className="main-container">
@@ -23,16 +24,17 @@ function App() {
           <Sidebar handler={collapseHandler}/>
         </div>
         <div className={!little ? 'app-body' : 'app-body app-body-max'}>
-          <Router>
+          
             <Switch>
                 <Route path="/profile" component={Profile}/>
                 <Route path="/live" component={Live}/>
-                <Route path="/home" component={Home}/>
+                <Route path="/" component={Home}/>
             </Switch>
-          </Router>
+          
         </div>
       </div>
     </div>
+    </Router>
   );
 }
 
