@@ -37,7 +37,7 @@
   width: 20%;
   height: 100%;
   background-color: #1F1F23;
-  transition: width 100ms ease-in;
+  transition: width 30ms ease-in;
 }
 
 .app-body {
@@ -45,16 +45,16 @@
   height: 100%;
   background-color: #0E0E10;
   overflow-y: auto;
-  transition: width 100ms ease-in;
+  transition: width 30ms ease-in;
 }
 
 .collapse-sidebar {
-  width: 5%;
+  width: 4%;
   height: 100%;
 }
 
 .app-body-max {
-  width: 95%;
+  width: 96%;
   height: 100%;
   background-color: #0E0E10;
   overflow-y: auto;

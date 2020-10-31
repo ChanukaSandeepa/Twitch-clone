@@ -1,0 +1,86 @@
+.live {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.chat-section {
+    width: 30%;
+    height: 100%;
+    background-color: black;
+}
+
+.live-vid-section {
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.vid-section {
+    height: 70%;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+
+.pro-section {
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.pro {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+}
+
+.descrip-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.channel-des-container {
+    display: flex;
+    align-items: center;
+}
+
+.descrip {
+    flex: 1;
+    padding: 0px 10px;
+}
+
+.descrip > h3 {
+    
+}
+
+.sub-title-1 {
+    display: block;
+}
+
+.sub-title-2 {
+    color: #A970FF;
+}
+
+.tag-container {
+    padding: 5px 0px;
+    display: flex;
+}
+
+.account {
+    width: 80%;
+    height: auto;
+    background-color: #18181B;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.acc-des-continer {
+    padding: 10px;
+}
+
+.acc-des-continer > p {
+    /* line-height: 0; */
+    font-size: 13px;
+}

@@ -4,6 +4,8 @@ import Sidebar from './components/Sidebar';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import Home from './components/Home';
 import React, { useState } from 'react';
+import Live from './components/Live';
+import Profile from './components/Profile';
 
 function App() {
 
@@ -23,7 +25,9 @@ function App() {
         <div className={!little ? 'app-body' : 'app-body app-body-max'}>
           <Router>
             <Switch>
-                <Route path="/" component={Home}/>
+                <Route path="/profile" component={Profile}/>
+                <Route path="/live" component={Live}/>
+                <Route path="/home" component={Home}/>
             </Switch>
           </Router>
         </div>

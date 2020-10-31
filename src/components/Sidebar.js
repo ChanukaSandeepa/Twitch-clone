@@ -1,5 +1,5 @@
 import { IconButton } from '@material-ui/core'
-import { ArrowBack } from '@material-ui/icons'
+import { ArrowBack, ArrowForward, FavoriteBorder, Videocam } from '@material-ui/icons'
 import React, { createRef, useEffect, useState } from 'react'
 import '../css/sidebar.css'
 import '../App.css'
@@ -13,11 +13,11 @@ export default function Sidebar({handler}) {
     useEffect(() => {
         const resizeObserver = new ResizeObserver((entries) => {
             if(entries){
-                console.log(entries[0].target.offsetWidth);
                 const sidebarWidth = entries[0].target.offsetWidth
-                const collapseWidth = window.innerWidth * 5 /100
-
-                if(sidebarWidth === collapseWidth){
+                const collapseWidth = window.innerWidth * 4 /100
+                console.log('sidebar width', sidebarWidth)
+                console.log('collapse width', collapseWidth)
+                if(sidebarWidth === Math.floor(collapseWidth)){
                     setCollapsed(true)
                 } else {
                     setCollapsed(false)
@@ -31,17 +31,19 @@ export default function Sidebar({handler}) {
     return (
         <div ref={ref} className="sidebar">
             <div className="sidebar-channels" style={{height : '90%', width : '100%'}}>
-                <div style={{paddingLeft : '15px', display : 'flex', justifyContent : 'space-between', alignItems :'center'}}>
+                <div style={{paddingLeft : !isCollapsed ? '15px' : '0px', display : 'flex', justifyContent : !isCollapsed ? 'space-between' : 'center', alignItems :'center'}}>
                    {!isCollapsed && <span>FOLLOWED CHANNELS</span>}
                     <IconButton onClick={() => handler()}>
-                        <ArrowBack/>
+                        {!isCollapsed ? <ArrowBack style={{fontSize : '20px'}}/> : <ArrowForward style={{fontSize : '20px'}} className="expand-key"/>}
                     </IconButton>
                 </div>
+                {isCollapsed && <div className="tooltip"> <FavoriteBorder style={{fontSize : '20px'}}/> <span class="tooltiptext">Tooltip text</span></div>}
+                
                 <Channel/>
                 <Channel/>
                 <Channel/>
-                <div style={{padding : '15px'}}>
-                   {!isCollapsed && <span>RECOMMENDED CHANNELS</span>}
+                <div style={{paddingLeft : !isCollapsed ? '15px' : '0px', display : 'flex', justifyContent : !isCollapsed ? 'space-between' : 'center'}}>
+                   {!isCollapsed ? <span>RECOMMENDED CHANNELS</span> : <Videocam style={{fontSize : '20px'}}/>}
                 </div>
                 <Channel/>
                 <Channel/>

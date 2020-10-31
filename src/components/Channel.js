@@ -14,9 +14,9 @@ export default function Channel() {
             if(entries){
                 console.log(entries[0].target.offsetWidth);
                 const sidebarWidth = entries[0].target.offsetWidth
-                const collapseWidth = window.innerWidth * 5 /100
+                const collapseWidth = window.innerWidth * 4 /100
 
-                if(sidebarWidth === collapseWidth){
+                if(sidebarWidth === Math.floor(collapseWidth)){
                     setCollapsed(true)
                 } else {
                     setCollapsed(false)
